@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOCK IT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+    <h1>Sock It Shop</h1>
+    <p>Your one-stop shop for cozy, funky, and fashionable socks.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Shop</li></a>
+      <a href="#"><li>Collections</li></a>
+      <a href="#"><li>Contact</li></a>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <aside>
+      <h2>Categories</h2>
+      <ul>
+        <li>Funny Socks</li>
+        <li>Sports Socks</li>
+        <li>Luxury Wool</li>
+        <li>Holiday Specials</li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="card">
+        <h2>Cozy Wool Socks</h2>
+        <p id="text-change">Stay warm and stylish all winter with our premium wool socks.</p>
+        <button onclick="changeText()">Change Description</button>
+      </div>
+
+      <div class="card" id="color-card">
+        <h2>Colorful Socks</h2>
+        <p>Make a statement with our best-selling colorful sock collection.</p>
+        <button onclick="toggleBackground()">Toggle Background</button>
+      </div>
+
+      <div class="card">
+        <h2>Special Offer</h2>
+        <div id="offer-box"></div>
+        <button onclick="toggleOffer()">Toggle Offer</button>
+      </div>
+
+        <h2>Sock Slideshow</h2>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="happysocks.jpg" alt="Sock 1">
+    </div>
+    <div class="slide fade">
+      <img src="Cozy.jpg" alt="Sock 2">
+    </div>
+    <div class="slide fade">
+      <img src="sportsock.jpg" alt="Sock 3">
+    </div>
+  </div>
+
+  <div class="dots">
+    <span class="dot" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+  </div>
+
+      <div class="card">
+        <h2>Subscribe</h2>
+        <form id="subscribeForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+          <span class="error" id="errorMsg"></span>
+          <button type="submit">Submit</button>
+        </form>
+        <p id="feedback"></p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Sockit Shop
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
